@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+                           https://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- Definition for OS bean -->
+    <bean id="os" class="com.example.demo.OS"/>
+
+    <!-- Definition for Laptop bean -->
+    <bean id="laptop" class="com.example.demo.Laptop">
+        <constructor-arg ref="os"/>
+    </bean>
+
+</beans>
